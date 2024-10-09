@@ -22,7 +22,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/pelican-dev/panel
+          images: ghcr.io/ManfredRichthofen/pelican-panel
           flavor: |
             latest=false
           tags: |
