@@ -7,7 +7,7 @@ WORKDIR /build
 
 COPY . ./
 
-RUN yarn install --frozen-lockfile && yarn run build:production
+RUN yarn install --frozen-lockfile --network-timeout 100000 && yarn run build:production
 
 FROM php:8.3-fpm-alpine
 # FROM --platform=$TARGETOS/$TARGETARCH php:8.3-fpm-alpine
